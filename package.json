@@ -4,7 +4,7 @@
   "description": "Este es un repositorio de mi tienda de venta omnilife",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node servi"
   },
   "repository": {
     "type": "git",
