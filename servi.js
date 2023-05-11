@@ -3,7 +3,7 @@ const app = express();
 
 const port = 3000;
 
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs');
 
 app.set('views',__dirname +'/views');
 
@@ -22,7 +22,10 @@ app.get("/pasarela",(req, res) => {
 
 
 app.use((req, res) => {
-    res.status(404).sendFile(__dirname + "/public/404.html");
+    res.status(404).render("404", {title
+        :"404",
+        description: "Consulta inesperada" 
+    });
 });
 
 
