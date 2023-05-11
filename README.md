@@ -1,2 +1,2 @@
 # EcommerOnline
-Este es un repositorio de mi tienda de venta omnilife
+Mi padre y mi madre son mi motivación.  Yo quiero yo puedo y voy a poder.
