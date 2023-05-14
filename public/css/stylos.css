@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shantell Sans', cursive;
+}
+
+/*Con este contenedor estamos centrando todo nuestro html*/
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; 
+}
+
+/*Dandole stylo a la sección de nuestro producto*/
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+header{
+width: 100%;
+height: 700px;
+    background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(339, 83%, 67%, 0.7), #994982b5), url("../img/img.jpg");
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size:  cover;
+background-attachment: fixed; 
+position: relative;
+}
+/*Este nav esta aliniando mi menu a la izquierda*/
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
