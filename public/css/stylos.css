@@ -32,17 +32,19 @@ width: 100%;
 height: 700px;
     background: #bc4e9c;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, hsla(339, 83%, 67%, 0.7), #994982b5), url("../img/img.jpg");
+background: linear-gradient(to right, hsla(189, 14%, 27%, 0.464), hsla(189, 12%, 11%, 0.71)), url("../img/img.jpg");
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background-size:  cover;
 background-attachment: fixed; 
 position: relative;
+z-index: 100;
 }
-/*Este nav esta aliniando mi menu a la izquierda*/
+/*Este nav esta aliniando mi menu a la derecha*/
 nav{
     text-align: right;
-    padding: 30px 50px 0 0;
+    padding:  30px 50px 0 0;
 }
+
 
 nav > a{
     color: #fff;
@@ -79,3 +81,187 @@ header .textos-header{
     font-weight: 300;
     color: #fff;
 }
+
+/*About us*/
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+    height: 300px;
+}
+.sobre-nosotros .contenido-textos{
+    width: 77%;
+}
+
+.contenido-textos h3{
+    margin-bottom:15px;
+}
+
+.contenido-textos h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+}
+
+
+/*Estilo de productos*/
+
+.main-title{
+    color: #4d0686;
+}
+.container-products{
+    grid-gap: 10px;
+}
+@media(max-width: 1964px) {
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media(max-width: 1364px) {
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 992px) {
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 620px) {
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.product{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.product:before{
+    content: "New";
+    background: #f8b25cdf;
+    padding: 0 10px;
+    width: 60px;
+    position:absolute;
+    top: 14px;
+    right: 10px;
+    transform:rotate(-90deg);
+}
+
+.product__price{
+    color: coral;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.product__icon{
+    display: block;
+    margin-top: 10px;
+}
+.product__por{
+    color: #4d0686;
+}
+/*Stylos de mi card*/
+.container__card{
+    max-width: 1200px;
+    margin:  auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+
+}
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+.card{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 900ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: #fba05580;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.body__card_back p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #ccc;
+    background: #4d0686;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius:  10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+}
+
+
+
+
+

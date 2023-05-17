@@ -1,0 +1,41 @@
+[33mcommit 677f4807c0f47792c4b65ffc0245099d6e46cf31[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Carlos Cubides <wuarnerz10@gmail.com>
+Date:   Sun May 14 17:35:49 2023 -0500
+
+    Configurando diseño de portada de mi pagina web
+
+[33mcommit fa441391a3f5f08c677e26a37d3360f5c2b834c8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Carlos Cubides <wuarnerz10@gmail.com>
+Date:   Thu May 11 10:40:31 2023 -0500
+
+    Modificando texto del archivo README.md
+
+[33mcommit 97bda6f2da421049c347b7c1117d1f45382405c9[m
+Author: Carlos Cubides <wuarnerz10@gmail.com>
+Date:   Thu May 11 10:32:10 2023 -0500
+
+    Configuración del navbar
+
+[33mcommit d0d7b080adb2c91757279ad8ecba5cc9a9451d0e[m
+Author: Carlos Cubides <wuarnerz10@gmail.com>
+Date:   Wed May 10 21:23:15 2023 -0500
+
+    Configuración de nuestro template
+
+[33mcommit c9cef38014c95ef14d2675fd693832e94815e071[m
+Author: Carlos Cubides <wuarnerz10@gmail.com>
+Date:   Wed May 10 18:32:12 2023 -0500
+
+    Se creo el entorno de la carpeta views y ejs y nuestro middleware
+
+[33mcommit 19c8e04fb8e17643815f503c66292dbb0a4d08ff[m
+Author: Carlos Cubides <wuarnerz10@gmail.com>
+Date:   Wed May 10 16:07:58 2023 -0500
+
+    Configuración servidor y rutas
+
+[33mcommit 9e5f0e3f76562b719f5ec1a065344e729e6ea368[m
+Author: CarCubidesQuintero <126310486+CarCubidesQuintero@users.noreply.github.com>
+Date:   Wed May 10 13:47:27 2023 -0500
+
+    Initial commit
