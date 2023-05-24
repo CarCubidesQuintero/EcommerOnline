@@ -3,15 +3,13 @@
     margin:0 ;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
-body{
-    font-family: 'Shantell Sans', cursive;
-}
 
 /*Con este contenedor estamos centrando todo nuestro html*/
 .contenedor{
-    padding: 60px 0;
+    padding: 40px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -25,6 +23,7 @@ body{
     text-align: center;
     margin-bottom: 60px;
 }
+
 
 /*Header*/
 header{
@@ -83,14 +82,32 @@ header .textos-header{
 }
 
 /*About us*/
+
 .contenedor-sobre-nosotros{
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
 }
+.contenido-textos p{
+    font-size: 20px;
+    color: #7a7a7a;
+}
+
+.peque{
+    width: 100px;
+    height: 100px;
+    margin: 0 50px;;
+}
+.peque img{
+    width: 150px;
+    height: 150px;
+}
+
 
 .imagen-about-us{
-    width: 48%;
+    width: 58%;
     height: 300px;
+    margin-bottom: 0 50px;
 }
 .sobre-nosotros .contenido-textos{
     width: 77%;
@@ -110,13 +127,20 @@ header .textos-header{
 }
 
 
-/*Estilo de productos*/
 
+
+
+/*Estilo de productos*/
+.icon__color{
+    text-decoration: none;
+    color: #343434;
+}
 .main-title{
-    color: #4d0686;
+    color: #4d0686; 
 }
 .container-products{
     grid-gap: 10px;
+        
 }
 @media(max-width: 1964px) {
     .container-products{
@@ -158,6 +182,10 @@ header .textos-header{
     top: 14px;
     right: 10px;
     transform:rotate(-90deg);
+}
+
+.product__description h3{
+    color: #4d0686;
 }
 
 .product__price{
@@ -222,11 +250,23 @@ header .textos-header{
 
 .card__back{
     transform: rotateY(180deg);
-    background: #fba05580;
+    background: #fb832186;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8e03ffe6;
+   transform: translateZ(60px);
 }
 
 .body__card_back{
-    padding: 40px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -261,7 +301,99 @@ header .textos-header{
     box-shadow: 1px 1px 30px -5px #58B0F6;
 }
 
+/*Stylos de nuestro footer*/
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+}
 
+.container__footer{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
 
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+     
+}
 
+.box__footer .logo img{
+    width: 120px;
+}
 
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top:  10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: none;
+}
+.box__footer a:hover{
+    opacity: 0.8;
+}
+.box__footer a .fab{
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin:auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.box__copyright p{
+    margin-top:  20px;
+    color: #7a7a7a;
+}
+.box__copyright hr{
+    border:none;
+    height: 1px;
+    background: #7a7a7a;
+}
+
+/*Stylos icon whatsapp*/
+.btn-wsp{
+    position:fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom:30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+}
