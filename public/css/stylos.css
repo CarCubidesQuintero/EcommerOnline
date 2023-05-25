@@ -3,7 +3,9 @@
     margin:0 ;
     padding: 0;
     box-sizing: border-box;
-    
+}
+body{
+    font-family: 'Shantell Sans', cursive;
 }
 
 
@@ -141,6 +143,20 @@ header .textos-header{
 .container-products{
     grid-gap: 10px;
         
+}
+
+.contac{
+    border: 2px solid #0099cc;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contac:hover{
+    background-color: #ffae0070;
 }
 @media(max-width: 1964px) {
     .container-products{
