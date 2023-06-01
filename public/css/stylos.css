@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Playfair', serif;
+}
 
 
 /*Con este contenedor estamos centrando todo nuestro html*/
@@ -146,7 +148,7 @@ header .textos-header{
 .contac{
     border: 2px solid #0099cc;
     padding: 10px 20px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -156,26 +158,30 @@ header .textos-header{
 .contac:hover{
     background-color: #ffae0070;
 }
-@media(max-width: 1964px) {
-    .container-products{
+
+.container{
+    padding: 10px;
+}
+@media(max-width: 2964px) {
+    .container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 }
 @media(max-width: 1364px) {
-    .container-products{
+    .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
 @media(max-width: 992px) {
-    .container-products{
+    .container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media(max-width: 620px) {
-    .container-products{
+    .container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
